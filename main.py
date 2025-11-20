@@ -29,8 +29,29 @@ def generar_numero_invertido(n):
 
 #6 -- Calcula el n-ésimo número de la serie Lucas.
 def calcular_lucas(n):
-    #aqui va la el algoritmo
-    return n
+    # Validar que n no sea negativo
+    if n < 0:
+        print("El número debe ser mayor o igual a 0.")
+        return None
+
+    # Casos básicos de la serie de Lucas
+    if n == 0:
+        return 2
+    if n == 1:
+        return 1
+
+    # Para n >= 2 usamos un ciclo sencillo
+    anterior = 2  # L(0)
+    actual = 1    # L(1)
+
+    # Recorremos desde 2 hasta n
+    for i in range(2, n + 1):
+        siguiente = anterior + actual
+        anterior = actual
+        actual = siguiente
+
+    # Al final, en "actual" queda L(n)
+    return actual
 
 # ====================================================================
 # Menú Principal (Implementado por Luis Carlos Cabezas)
