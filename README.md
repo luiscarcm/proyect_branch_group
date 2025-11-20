@@ -18,7 +18,7 @@ El menú principal del programa incluye las siguientes opciones:
 | **4. N números perfectos** | Generar la serie de los primeros N números perfectos. | **Mauricio Andres Guevara Astaiza** | `feature-perfectos`  |
 | **5. Invertir un Número** | Generar el número invertido de un número dado. | **Kevin Alfonso Mercado Ayos** | `feature-invertir`  |
 | **6. Serie Lucas** | Cálculo de la serie de Lucas. | **Jonathan Andres Veloza Salcedo** | `feature-lucas`  |
-| **Salir** | Termina la ejecución del programa. | **Luis Carlos Cabezas Madroñero** | `menu`  |
+| **7. Salir** | Termina la ejecución del programa. | **Luis Carlos Cabezas Madroñero** | `menu`  |
 
 ---
 
@@ -56,4 +56,4 @@ Para ejecutar el programa, asegúrate de tener Python instalado y sigue estos pa
     ```
 
 3.  **Verificación:**
-    Selecciona cada opción del menú (1-4) y verifica que el cálculo se realice correctamente.
+    Selecciona cada opción del menú (1-6) y verifica que el cálculo se realice correctamente.
