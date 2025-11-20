@@ -1,4 +1,38 @@
 # ====================================================================
+# Algoritmos Matemáticos (Implementación de Funciones)
+# ====================================================================
+
+#1 -- Calcula el n-ésimo número de Fibonacci.
+def calcular_fibonacci(n):
+    #aqui va la el algoritmo
+    return n
+
+#2 -- Calcula el factorial de un número.
+def calcular_factorial(n):
+    #aqui va la el algoritmo
+    return n
+
+#3 -- Determina si un número es primo.
+def es_primo(n):
+    #aqui va la el algoritmo
+    return n
+
+#4 -- Verifica si un número es perfecto.
+def generar_numeros_perfectos(n):
+    #aqui va la el algoritmo
+    return n
+
+#5 -- Genera el número invertido de un número dado.
+def generar_numero_invertido(n):
+    #aqui va la el algoritmo
+    return n
+
+#6 -- Calcula el n-ésimo número de la serie Lucas.
+def calcular_lucas(n):
+    #aqui va la el algoritmo
+    return n
+
+# ====================================================================
 # Menú Principal (Implementado por Luis Carlos Cabezas)
 # ====================================================================
 
