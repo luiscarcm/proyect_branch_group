@@ -24,7 +24,7 @@ El menú principal del programa incluye las siguientes opciones:
 
 ### 🧑‍💻 Integrantes y Ramas Asignadas
 
-El equipo se conformó de 5 integrantes, y cada uno contribuyó en su propia rama de desarrollo, que fue luego fusionada a través de Pull Requests:
+El equipo se conformó de 7 integrantes, y cada uno contribuyó en su propia rama de desarrollo, que fue luego fusionada a través de Pull Requests:
 
 | Integrante | Rama de Desarrollo | Tarea Principal |
 | :--- | :--- | :--- |
