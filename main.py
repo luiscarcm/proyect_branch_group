@@ -18,9 +18,23 @@ def es_primo(n):
     return n
 
 #4 -- Verifica si un número es perfecto.
-def generar_numeros_perfectos(n):
-    #aqui va la el algoritmo
-    return n
+def generar_numeros_perfectos(limite: int) -> list:
+    perfectos = []
+
+    for num in range(2, limite + 1):
+        suma_divisores = 0
+        
+        for i in range(1, int(num**0.5) + 1):
+            if num % i == 0:
+                suma_divisores += i
+                otro = num // i
+                if otro != i and otro != num:
+                    suma_divisores += otro
+        
+        if suma_divisores == num:
+            perfectos.append(num)
+
+    return perfectos
 
 #5 -- Genera el número invertido de un número dado.
 def generar_numero_invertido(n):
