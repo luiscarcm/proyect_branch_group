@@ -2,6 +2,17 @@
 # Algoritmos Matemáticos (Implementación de Funciones)
 # ====================================================================
 
+import os
+from fibonacci import fibonacci   # Importamos la función desde fibonacci.py
+
+def limpiar_pantalla():
+    # Para Windows
+    if os.name == "nt":
+        os.system("cls")
+    # Para Linux / Mac
+    else:
+        os.system("clear")
+
 #1 -- Calcula el n-ésimo número de Fibonacci.
 def calcular_fibonacci(n):
     #aqui va la el algoritmo
@@ -65,11 +76,32 @@ def main():
         opcion = input("Seleccione una opción (1-7): ").strip()
         
         if opcion == '1': # Fibonacci
-            n = obtener_entrada("Ingrese el valor de N para conocer el número de la serie Fibonacci: ")
-            resultado = calcular_fibonacci(n)
-            print("////////////////////////////////////////////////////////")
-            print(f"El número de Fibonacci en la posición {n} es: {resultado}")
-            print("////////////////////////////////////////////////////////")
+            #n = obtener_entrada("Ingrese el valor de N para conocer el número de la serie Fibonacci: ")
+            #resultado = calcular_fibonacci(n)
+            #print("////////////////////////////////////////////////////////")
+            #print(f"El número de Fibonacci en la posición {n} es: {resultado}")
+            #print("////////////////////////////////////////////////////////")
+            while True:
+                limpiar_pantalla()
+                print("=== Serie de Fibonacci ===")
+                try:
+                    n = int(input("Ingrese el número de términos que desea calcular: "))
+                    if n <= 0:
+                        print("Por favor ingrese un número entero positivo.")
+                    else:
+                        resultado = fibonacci(n)
+                        print(f"Los primeros {n} términos de la serie Fibonacci son:")
+                        print(resultado)
+                except ValueError:
+                    print("Entrada inválida. Debe ingresar un número entero.")
+                # Preguntar si desea continuar
+                opcion = input("¿Desea calcular otra serie? (s/n): ").strip().lower()
+                limpiar_pantalla()
+                if opcion != "s":
+                    limpiar_pantalla()
+                    break
+                
+
         
         elif opcion == '2': # Factorial
             n = obtener_entrada("Ingrese el número para calcular el Factorial: ")
