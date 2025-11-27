@@ -1,7 +1,6 @@
 # ====================================================================
 # Algoritmos Matemáticos (Implementación de Funciones)
 # ====================================================================
-<<<<<<< HEAD
 
 import os
 from fibonacci import fibonacci   # Importamos la función desde fibonacci.py
@@ -14,9 +13,7 @@ def limpiar_pantalla():
     else:
         os.system("clear")
 
-=======
 from feature_primos import es_primo
->>>>>>> origin/feature-primos
 #1 -- Calcula el n-ésimo número de Fibonacci.
 def calcular_fibonacci(n):
     #aqui va la el algoritmo
