@@ -2,6 +2,8 @@
 # Algoritmos Matemáticos (Implementación de Funciones)
 # ====================================================================
 
+from factorial import calcular_factorial_recursivo
+
 #1 -- Calcula el n-ésimo número de Fibonacci.
 def calcular_fibonacci(n):
     #aqui va la el algoritmo
@@ -73,7 +75,7 @@ def main():
         
         elif opcion == '2': # Factorial
             n = obtener_entrada("Ingrese el número para calcular el Factorial: ")
-            resultado = calcular_factorial(n)
+            resultado = calcular_factorial_recursivo(n)
             print("////////////////////////////////////////////////////////")
             print(f"El Factorial de {n} es: {resultado}")
             print("////////////////////////////////////////////////////////")
