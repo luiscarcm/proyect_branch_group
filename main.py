@@ -3,6 +3,7 @@
 # ====================================================================
 
 import os
+#1 -- Calcula el n-ésimo número de Fibonacci.
 from fibonacci import fibonacci   # Importamos la función desde fibonacci.py
 
 def limpiar_pantalla():
@@ -13,20 +14,11 @@ def limpiar_pantalla():
     else:
         os.system("clear")
 
+#3 -- Determina si un número es primo.
 from feature_primos import es_primo
-from factorial import calcular_factorial_recursivo
-
-#1 -- Calcula el n-ésimo número de Fibonacci.
-def calcular_fibonacci(n):
-    #aqui va la el algoritmo
-    return n
 
 #2 -- Calcula el factorial de un número.
-def calcular_factorial(n):
-    #aqui va la el algoritmo
-    return n
-
-#3 -- Determina si un número es primo.
+from factorial import calcular_factorial_recursivo
 
 #4 -- Verifica si un número es perfecto.
 def generar_numeros_perfectos(limite: int) -> list:
@@ -49,8 +41,13 @@ def generar_numeros_perfectos(limite: int) -> list:
 
 #5 -- Genera el número invertido de un número dado.
 def generar_numero_invertido(n):
-    #aqui va la el algoritmo
-    return n
+    numero_str = str(abs(n))
+    numero_invertido_str = numero_str[::-1]
+    numero_invertido = int(numero_invertido_str)
+    if n < 0:
+        return -numero_invertido
+    else:
+        return numero_invertido
 
 #6 -- Calcula el n-ésimo número de la serie Lucas.
 def calcular_lucas(n):
