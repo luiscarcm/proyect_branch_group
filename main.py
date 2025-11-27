@@ -1,7 +1,7 @@
 # ====================================================================
 # Algoritmos Matemáticos (Implementación de Funciones)
 # ====================================================================
-
+from feature_primos import es_primo
 #1 -- Calcula el n-ésimo número de Fibonacci.
 def calcular_fibonacci(n):
     #aqui va la el algoritmo
@@ -13,9 +13,6 @@ def calcular_factorial(n):
     return n
 
 #3 -- Determina si un número es primo.
-def es_primo(n):
-    #aqui va la el algoritmo
-    return n
 
 #4 -- Verifica si un número es perfecto.
 def generar_numeros_perfectos(n):
