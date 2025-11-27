@@ -154,7 +154,7 @@ def main():
             print("////////////////////////////////////////////////////////")
             
         elif opcion == '4': # Números Perfectos
-            n = obtener_entrada("Ingrese cuántos números Perfectos desea generar (N): ")
+            n = obtener_entrada("Ingrese un número para conocer los números perfectos (N): ")
             resultado = generar_numeros_perfectos(n)
             print("////////////////////////////////////////////////////////")
             print(f"Los primeros {n} números perfectos son: {resultado}")
