@@ -41,13 +41,11 @@ def generar_numeros_perfectos(limite: int) -> list:
 
 #5 -- Genera el número invertido de un número dado.
 def generar_numero_invertido(n):
-    numero_str = str(abs(n))
-    numero_invertido_str = numero_str[::-1]
-    numero_invertido = int(numero_invertido_str)
-    if n < 0:
-        return -numero_invertido
-    else:
-        return numero_invertido
+    signo = -1 if n < 0 else 1
+    n = abs(n)
+    numero_invertido = int(str(n)[::-1])
+    resultado = signo * numero_invertido
+    return resultado
 
 #6 -- Calcula el n-ésimo número de la serie Lucas.
 def calcular_lucas(n):
